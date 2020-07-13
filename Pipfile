@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+certifi = "==2018.8.24"
+chardet = "==3.0.4"
+cookies = "==2.2.1"
+idna = "==2.7"
+pytz = "==2018.5"
+requests = "==2.19.1"
+responses = "==0.9.0"
+six = "==1.11.0"
+steemconnect = "==0.0.5"
+urllib3 = "==1.23"
+lightsteem = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
+Django = "==2.2.13"
+Markdown = "==3.0.1"
+"discord.py" = "*"
+PrettyTable = "*"
+
+[requires]
+python_version = "3.8"

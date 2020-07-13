@@ -18,7 +18,7 @@ from .utils import get_comment_body
 
 client = discord.Client()
 lightsteem_client = LightsteemClient(
-        keys=[settings.CURATION_BOT_POSTING_KEY], loglevel=logging.DEBUG, nodes=["https://api.hivekings.com"])
+        keys=[settings.CURATION_BOT_POSTING_KEY], loglevel=logging.DEBUG, nodes=["https://blurtd.privex.io"])
 bot = commands.Bot(command_prefix='$', description="dPoll curation bot")
 
 

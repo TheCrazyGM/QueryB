@@ -25,7 +25,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         active_key = getpass.getpass(
             f"Active key of f{settings.SPONSORS_ACCOUNT}")
-        client = Client(keys=[active_key, ], nodes=["https://api.hivekings.com"])
+        client = Client(keys=[active_key, ], nodes=["https://blurtd.privex.io"])
         account = client.account(settings.SPONSORS_ACCOUNT)
         one_week_ago = now() - timedelta(days=7)
         sponsors = Sponsor.objects.filter(

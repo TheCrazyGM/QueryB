@@ -636,7 +636,7 @@ def sync_vote(request):
     except (TypeError, ValueError):
         return HttpResponse('Invalid block ID', status=400)
 
-    c = LightsteemClient(nodes=["https://api.hivekings.com"])
+    c = LightsteemClient(nodes=["https://blurtd.privex.io"])
     block_data = c.get_block(block_num)
     if not block_data:
         # block data may return null if it's invalid

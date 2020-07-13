@@ -6,7 +6,7 @@ from .models import Sponsor
 
 
 def steem_per_mvests():
-    c = Client(nodes=["https://api.hivekings.com"])
+    c = Client(nodes=["https://blurtd.privex.io"])
     info = c.get_dynamic_global_properties()
     return (float(Amount(info["total_vesting_fund_steem"]).amount) /
             (float(Amount(info["total_vesting_shares"]).amount) / 1e6))

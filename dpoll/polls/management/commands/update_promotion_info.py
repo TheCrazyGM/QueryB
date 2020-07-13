@@ -34,7 +34,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         """Entry point for the Django management command"""
-        client = Client(keys=[settings.PROMOTION_ACCOUNT_ACTIVE_KEY,], nodes=["https://api.hivekings.com"])
+        client = Client(keys=[settings.PROMOTION_ACCOUNT_ACTIVE_KEY,], nodes=["https://blurtd.privex.io"])
         acc = client.account(settings.PROMOTION_ACCOUNT)
         for _, transaction in acc.history(
                 filter=["transfer"],

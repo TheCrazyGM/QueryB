@@ -17,7 +17,7 @@ BLACKLIST = [
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        client = Client(nodes=["https://api.hivekings.com"])
+        client = Client(nodes=["https://blurtd.privex.io"])
         acc = client.account(settings.CURATION_BOT_ACCOUNT)
         for index, transaction in acc.history(
                 filter=["delegate_vesting_shares"],
